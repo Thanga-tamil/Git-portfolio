@@ -1,3 +1,44 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  z-index: 9999;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.popup1 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 20px;
+  z-index: 9999;
+}
+.overlay1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
 
 :root {
   --blue: #007bff;
@@ -274,13 +315,6 @@ select {
   word-wrap: normal;
 }
 
-button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
-  -webkit-appearance: button;
-}
-
 button:not(:disabled),
 [type='button']:not(:disabled),
 [type='reset']:not(:disabled),
@@ -301,13 +335,6 @@ input[type='checkbox'] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-}
-
-input[type='date'],
-input[type='time'],
-input[type='datetime-local'],
-input[type='month'] {
-  -webkit-appearance: listbox;
 }
 
 textarea {
@@ -345,7 +372,6 @@ progress {
 
 [type='search'] {
   outline-offset: -2px;
-  -webkit-appearance: none;
 }
 
 [type='search']::-webkit-search-decoration {
@@ -12029,7 +12055,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;

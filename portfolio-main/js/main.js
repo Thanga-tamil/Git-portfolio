@@ -1,3 +1,28 @@
+document
+  .getElementById('openPopup')
+  .addEventListener('click', function (event) {
+    event.preventDefault()
+    document.getElementById('overlay').style.display = 'block'
+    document.getElementById('popup').style.display = 'block'
+  })
+
+document.getElementById('overlay').addEventListener('click', function () {
+  document.getElementById('overlay').style.display = 'none'
+  document.getElementById('popup').style.display = 'none'
+})
+
+document
+  .getElementById('openPopup1')
+  .addEventListener('click', function (event) {
+    event.preventDefault()
+    document.getElementById('overlay1').style.display = 'block'
+    document.getElementById('popup1').style.display = 'block'
+  })
+
+document.getElementById('overlay1').addEventListener('click', function () {
+  document.getElementById('overlay1').style.display = 'none'
+  document.getElementById('popup1').style.display = 'none'
+})
 AOS.init({
   duration: 800,
   easing: 'slide',
